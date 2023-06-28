@@ -34,12 +34,13 @@ export class KarmaJasmineService {
   }
 
   factorial(a:number): number{
+    let resultado = 1;
     if(a==0||a==1){
       a=1;
-    }
+    }else{
     for(let i=1; i<=a ; i++){
-      a= a*i;
-    } 
-    return a;
+      resultado *=i;;
+    } }
+    return resultado;
   }
 }
