@@ -149,7 +149,15 @@ describe("KarmaJasmineService", () => {
     expect(resultado).toBe(3);
   });
 
-  
+  it("tengo substring", ()=>{
+    const resultado= service.tengoesesubstring("hola mundo","mundo");
+    expect(resultado).toBe(true);
+  });
+  it("tengo substring", ()=>{
+    const resultado= service.tengoesesubstring("hola mundo","mundillo");
+    expect(resultado).toBe(false);
+  });
+
 
 
 

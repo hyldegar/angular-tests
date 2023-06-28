@@ -81,4 +81,8 @@ export class KarmaJasmineService {
     return array.length;
 
   }
+
+  tengoesesubstring(a:string, b:string): boolean{
+    return a.includes(b);
+  }
 }
