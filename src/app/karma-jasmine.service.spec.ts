@@ -110,6 +110,14 @@ describe("KarmaJasmineService", () => {
     const resultado = service.numeromaximo(8, 8);
     expect(resultado).toBe("Ambos son iguales");
   });
-  
+  it("Cadena a Mayúsculas", ()=>{
+    const resultado= service.amayusculas("Prueba");
+    expect(resultado).toBe("PRUEBA");
+  });
+  it("Cadena a Mayúsculas", ()=>{
+    const resultado= service.amayusculas("El patio de mi casa es particular");
+    expect(resultado).toBe("EL PATIO DE MI CASA ES PARTICULAR");
+  });
+
 
 });
