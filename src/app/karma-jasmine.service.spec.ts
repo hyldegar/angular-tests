@@ -157,7 +157,19 @@ describe("KarmaJasmineService", () => {
     const resultado= service.tengoesesubstring("hola mundo","mundillo");
     expect(resultado).toBe(false);
   });
-
+  it("promedio del array",()=>{
+    const resultado= service.promedioarray([1, 2, 3, 4, 5]);
+    expect(resultado).toBe(3);
+  });
+  it("promedio del array",()=>{
+    const resultado= service.promedioarray([10, 20, 30]);
+    expect(resultado).toBe(20);
+  });
+  it("promedio del array",()=>{
+    const resultado= service.promedioarray([]);
+    expect(resultado).toBe(0);
+  });
+  
 
 
 

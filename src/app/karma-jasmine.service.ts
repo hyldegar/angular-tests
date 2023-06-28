@@ -69,20 +69,31 @@ export class KarmaJasmineService {
 
     return true;
   }
-  espositivo(numero:number):boolean{
-    if(numero>0){
+  espositivo(numero: number): boolean {
+    if (numero > 0) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
-  numeroelementosarray<T>(array: T[]): number{
-
+  numeroelementosarray<T>(array: T[]): number {
     return array.length;
-
   }
 
-  tengoesesubstring(a:string, b:string): boolean{
+  tengoesesubstring(a: string, b: string): boolean {
     return a.includes(b);
   }
+  promedioarray(array: number[]): number {
+    if (array.length == 0) {
+      return 0;
+    }
+    var suma = 0;
+    for (const numero of array) {
+      suma += numero;
+    }
+
+    const promedio = suma / array.length;
+    return promedio;
+  }
+  
 }
