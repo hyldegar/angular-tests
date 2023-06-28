@@ -76,5 +76,9 @@ export class KarmaJasmineService {
       return false;
     }
   }
-  
+  numeroelementosarray<T>(array: T[]): number{
+
+    return array.length;
+
+  }
 }

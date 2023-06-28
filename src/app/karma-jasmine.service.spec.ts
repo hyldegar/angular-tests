@@ -138,7 +138,19 @@ describe("KarmaJasmineService", () => {
     const resultado = service.espositivo(-3);
     expect(resultado).toBe(false);
   });
+  it("Cuantos elementos tiene un array", ()=>{
+    const resultado = service.numeroelementosarray([1, 2, 3, 4, 5]);
+    
+    expect(resultado).toBe(5);
+  });
+  it("Cuantos elementos tiene un array", ()=>{
+    const resultado = service.numeroelementosarray(["Juan", "María", "Carlos"]);
+    
+    expect(resultado).toBe(3);
+  });
+
   
+
 
 
 });
