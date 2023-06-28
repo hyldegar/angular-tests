@@ -95,26 +95,43 @@ export class KarmaJasmineService {
     const promedio = suma / array.length;
     return promedio;
   }
-  tepartoencachos(a:string): string[]{
+  tepartoencachos(a: string): string[] {
     const meparto: string[] = [];
 
     for (let i = 0; i < a.length; i++) {
       meparto.push(a.charAt(i));
     }
-  
+
     return meparto;
-
   }
-  tepartoytesumo(a:number): number{
-
+  tepartoytesumo(a: number): number {
     let sumatorio = 0;
-  const numeroPartio = a.toString();
+    const numeroPartio = a.toString();
 
-  for (let i = 0; i < numeroPartio.length; i++) {
-    sumatorio += parseInt(numeroPartio.charAt(i));
+    for (let i = 0; i < numeroPartio.length; i++) {
+      sumatorio += parseInt(numeroPartio.charAt(i));
+    }
+
+    return sumatorio;
   }
 
-  return sumatorio;
+  anagramos(a: string, b: string): boolean {
+    const aTranformado = a.replace(/\s/g, "").toLowerCase();
+    const bTransformado = b.replace(/\s/g, "").toLowerCase();
+
+    if (aTranformado.length !== bTransformado.length) {
+      return false;
+    }
+
+    const aTransformadoYRoto = aTranformado.split("").sort();
+    const bTransformadoYRoto = bTransformado.split("").sort();
+
+    for (let i = 0; i < aTransformadoYRoto.length; i++) {
+      if (aTransformadoYRoto[i] !== bTransformadoYRoto[i]) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }
-  }
-

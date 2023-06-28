@@ -178,6 +178,14 @@ describe("KarmaJasmineService", () => {
     expect(resultado).toBe(15);
   });
 
+  it("Analisis de estupefacientes", ()=>{
+    const resultado= service.anagramos('roma','amor');
+    expect(resultado).toBe(true);
+  
+  });
+
+  
+
 
 
 });
