@@ -118,6 +118,18 @@ describe("KarmaJasmineService", () => {
     const resultado= service.amayusculas("El patio de mi casa es particular");
     expect(resultado).toBe("EL PATIO DE MI CASA ES PARTICULAR");
   });
+  it("comprobar si el número es primo", ()=>{
+    const resultado = service.primo(12);
+    expect(resultado).toBe(false);
+  });
+  it("comprobar si el número es primo", ()=>{
+    const resultado = service.primo(13);
+    expect(resultado).toBe(true);
+  });
+  it("comprobar si el número es primo", ()=>{
+    const resultado = service.primo(33);
+    expect(resultado).toBe(false);
+  });
 
 
 });

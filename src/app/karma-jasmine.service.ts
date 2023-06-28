@@ -54,9 +54,19 @@ export class KarmaJasmineService {
     return resultado;
   }
 
-  amayusculas(a:string):string{
-    
+  amayusculas(a: string): string {
     return a.toLocaleUpperCase();
   }
-  
+  primo(numero: number): boolean {
+    if (numero <= 1) {
+      return false;
+    }
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+      if (numero % i === 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }
