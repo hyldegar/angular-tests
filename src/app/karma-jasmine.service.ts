@@ -37,8 +37,8 @@ export class KarmaJasmineService {
     if(a==0||a==1){
       a=1;
     }
-    for(let i= a; i>1 ; i--){
-      a= a*i-1;
+    for(let i=1; i<=a ; i++){
+      a= a*i;
     } 
     return a;
   }
