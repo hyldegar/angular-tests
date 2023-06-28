@@ -88,4 +88,22 @@ describe('KarmaJasmineService', () => {
     const resultado= service.palindromo("Pepiño me come o rabiño");
     expect(resultado).toBe(false);
   })
+  it('Factorial', ()=>{
+
+    const resultado= service.factorial(5);
+    expect(resultado).toBe(120);
+
+  })
+  it('Factorial', ()=>{
+
+    const resultado= service.factorial(1);
+    expect(resultado).toBe(1);
+
+  })
+  it('Factorial', ()=>{
+
+    const resultado= service.factorial(0);
+    expect(resultado).toBe(1);
+
+  })
 });

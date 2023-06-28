@@ -32,4 +32,14 @@ export class KarmaJasmineService {
     return palabra === palabra.split('').reverse().join('');
     
   }
+
+  factorial(a:number): number{
+    if(a==0||a==1){
+      a=1;
+    }
+    for(let i= a; i>1 ; i--){
+      a= a*a-1;
+    } 
+    return a;
+  }
 }
