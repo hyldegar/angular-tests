@@ -69,4 +69,12 @@ export class KarmaJasmineService {
 
     return true;
   }
+  espositivo(numero:number):boolean{
+    if(numero>0){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
 }

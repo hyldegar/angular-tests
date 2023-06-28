@@ -130,6 +130,15 @@ describe("KarmaJasmineService", () => {
     const resultado = service.primo(33);
     expect(resultado).toBe(false);
   });
+  it("comprobar si el número es positivo", ()=>{
+    const resultado = service.espositivo(33);
+    expect(resultado).toBe(true);
+  });
+  it("comprobar si el número es positivo", ()=>{
+    const resultado = service.espositivo(-3);
+    expect(resultado).toBe(false);
+  });
+  
 
 
 });
