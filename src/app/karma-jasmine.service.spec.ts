@@ -98,4 +98,18 @@ describe("KarmaJasmineService", () => {
     const resultado = service.factorial(0);
     expect(resultado).toBe(1);
   });
+  it("Número máximo el segundo es el mayor", () => {
+    const resultado = service.numeromaximo(2, 6);
+    expect(resultado).toBe("6");
+  });
+  it("Número máximo, el primero es el mayor", () => {
+    const resultado = service.numeromaximo(8, 6);
+    expect(resultado).toBe("8");
+  });
+  it("Número máximo, son iguales", () => {
+    const resultado = service.numeromaximo(8, 8);
+    expect(resultado).toBe("Ambos son iguales");
+  });
+  
+
 });

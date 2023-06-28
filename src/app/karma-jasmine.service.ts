@@ -18,29 +18,45 @@ export class KarmaJasmineService {
   dividir(a: number, b: number): number {
     return a / b;
   }
-  espar(a:number): boolean {
-
-    if(a%2 == 0 ){
+  espar(a: number): boolean {
+    if (a % 2 == 0) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
-  palindromo(a:string): boolean{
-
-    const palabra= a.toLowerCase().replace(/\s/g, '');
-    return palabra === palabra.split('').reverse().join('');
-    
+  palindromo(a: string): boolean {
+    const palabra = a.toLowerCase().replace(/\s/g, "");
+    return palabra === palabra.split("").reverse().join("");
   }
 
-  factorial(a:number): number{
+  factorial(a: number): number {
     let resultado = 1;
-    if(a==0||a==1){
-      a=1;
-    }else{
-    for(let i=1; i<=a ; i++){
-      resultado *=i;;
-    } }
+    if (a == 0 || a == 1) {
+      a = 1;
+    } else {
+      for (let i = 1; i <= a; i++) {
+        resultado *= i;
+      }
+    }
     return resultado;
   }
+  numeromaximo(a: number, b: number): string {
+    let resultado: string;
+
+    if (a > b) {
+      resultado = a.toString();
+    } else if (a < b) {
+      resultado = b.toString();
+    } else {
+      resultado = "Ambos son iguales";
+    }
+    return resultado;
+  }
+
+  amayusculas(a:string):string{
+    
+    return a.toLocaleUpperCase();
+  }
+  
 }
