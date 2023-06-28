@@ -105,5 +105,16 @@ export class KarmaJasmineService {
     return meparto;
 
   }
-  
+  tepartoytesumo(a:number): number{
+
+    let sumatorio = 0;
+  const numeroPartio = a.toString();
+
+  for (let i = 0; i < numeroPartio.length; i++) {
+    sumatorio += parseInt(numeroPartio.charAt(i));
+  }
+
+  return sumatorio;
+}
+  }
 }

@@ -172,7 +172,11 @@ describe("KarmaJasmineService", () => {
   it("partimos la pana", ()=>{
     const resultado=service.tepartoencachos("hola")
     expect(resultado).toEqual(["h","o","l","a"])
-  })
+  });
+  it("te parto y te sumo", ()=>{
+    const resultado= service.tepartoytesumo(12345);
+    expect(resultado).toBe(15);
+  });
 
 
 
