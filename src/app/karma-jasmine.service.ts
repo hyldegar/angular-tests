@@ -26,7 +26,10 @@ export class KarmaJasmineService {
       return false;
     }
   }
-  /*palindromo(a:string): boolean{
+  palindromo(a:string): boolean{
+
+    const palabra= a.toLowerCase().replace(/\s/g, '');
+    return palabra === palabra.split('').reverse().join('');
     
-  }*/
+  }
 }

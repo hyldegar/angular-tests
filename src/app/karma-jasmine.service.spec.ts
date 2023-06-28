@@ -80,4 +80,12 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(false);
     
   })
+  it('Es palindromo o no ', ()=>{
+    const resultado= service.palindromo("Anita lava la tina");
+    expect(resultado).toBe(true);
+  })
+  it('Es palindromo o no ', ()=>{
+    const resultado= service.palindromo("Pepiño me come o rabiño");
+    expect(resultado).toBe(false);
+  })
 });
