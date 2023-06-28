@@ -74,36 +74,36 @@ describe('KarmaJasmineService', () => {
     const resultado= service.espar(6);
     expect(resultado).toBe(true);
 
-  })
+  });
   it('Es par o no es par?', ()=>{
     const resultado= service.espar(5);
     expect(resultado).toBe(false);
     
-  })
+  });
   it('Es palindromo o no ', ()=>{
     const resultado= service.palindromo("Anita lava la tina");
     expect(resultado).toBe(true);
-  })
+  });
   it('Es palindromo o no ', ()=>{
     const resultado= service.palindromo("Pepiño me come o rabiño");
     expect(resultado).toBe(false);
-  })
+  });
   it('Factorial', ()=>{
 
     const resultado= service.factorial(5);
     expect(resultado).toBe(120);
 
-  })
+  });
   it('Factorial', ()=>{
 
     const resultado= service.factorial(1);
     expect(resultado).toBe(1);
 
-  })
+  });
   it('Factorial', ()=>{
 
     const resultado= service.factorial(0);
     expect(resultado).toBe(1);
 
-  })
+  });
 });
