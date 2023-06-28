@@ -169,7 +169,10 @@ describe("KarmaJasmineService", () => {
     const resultado= service.promedioarray([]);
     expect(resultado).toBe(0);
   });
-  
+  it("partimos la pana", ()=>{
+    const resultado=service.tepartoencachos("hola")
+    expect(resultado).toEqual(["h","o","l","a"])
+  })
 
 
 

@@ -95,5 +95,15 @@ export class KarmaJasmineService {
     const promedio = suma / array.length;
     return promedio;
   }
+  tepartoencachos(a:string): string[]{
+    const meparto: string[] = [];
+
+    for (let i = 0; i < a.length; i++) {
+      meparto.push(a.charAt(i));
+    }
+  
+    return meparto;
+
+  }
   
 }
