@@ -123,11 +123,14 @@ export class KarmaJasmineService {
       return false;
     }
 
-    const aTransformadoYRoto = aTranformado.split("").sort();
-    const bTransformadoYRoto = bTransformado.split("").sort();
+    for (let char of aTranformado) {
+      if (!bTransformado.includes(char)) {
+        return false;
+      }
+    }
 
-    for (let i = 0; i < aTransformadoYRoto.length; i++) {
-      if (aTransformadoYRoto[i] !== bTransformadoYRoto[i]) {
+    for (let char of bTransformado) {
+      if (!aTranformado.includes(char)) {
         return false;
       }
     }

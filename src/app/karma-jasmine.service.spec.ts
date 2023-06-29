@@ -184,7 +184,15 @@ describe("KarmaJasmineService", () => {
   
   });
 
-  
+  it('Seguimos analizando', () => {
+    const resultado = service.anagramos('hola', 'hello');
+    expect(resultado).toBe(false);
+  });
+
+  it('ultimo análisis', () => {
+    const resultado = service.anagramos('anagrama', 'nagarama');
+    expect(resultado).toBe(true);
+  });
 
 
 
