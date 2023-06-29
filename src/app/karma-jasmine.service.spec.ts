@@ -195,5 +195,46 @@ describe("KarmaJasmineService", () => {
   });
 
 
+  it('grande grande', () => {
+    
+    const apotema = 5;
+    const longitudLado = 8;
+    const numeroLados = 6;
+    
+
+    
+    const areaPoligono = service.comoDeGrandeEres (apotema, longitudLado, numeroLados);
+
+    
+    expect(areaPoligono).toBe(120);
+  });
+
+  it('sin lado no hay pecado', () => {
+    
+    const apotema = 10;
+    const longitudLado = 0;
+    const numeroLados = 5;
+    
+
+  
+    const areaPoligono = service.comoDeGrandeEres(apotema, longitudLado, numeroLados);
+
+    
+    expect(areaPoligono).toBe(0);
+  });
+
+  it('menos de 3 lados el poligono no es cerrado', () => {
+    
+    const apotema = 8;
+    const longitudLado = 6;
+    const numeroLados = 2;
+   
+
+    
+    const areaPoligono = service.comoDeGrandeEres(apotema, longitudLado, numeroLados);
+
+    
+    expect(areaPoligono).toBe(0);
+  });
 
 });

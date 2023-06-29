@@ -137,4 +137,14 @@ export class KarmaJasmineService {
 
     return true;
   }
+  comoDeGrandeEres(apotema: number, longitudLado: number, numeroLados: number): number {
+    var area;
+    if(numeroLados<3){
+      area=0;
+    }else{
+    const perimetro = longitudLado * numeroLados;
+    area = (perimetro * apotema) / 2;
+    }
+    return area;
+  }
 }
